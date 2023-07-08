@@ -1,0 +1,97 @@
+#page__customStyle {
+  clear: both;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+#page__customStyle h1, #page__customStyle h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #111;
+}
+#page__customStyle h1 {
+  font-size: 20px;
+  line-height: 22px;
+  background-color: oldlace;
+  padding: 20px;
+  margin: calc(-20px);
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#page__customStyle .page__customStyle-form {
+  position: relative;
+}
+#page__customStyle .page__customStyle-form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#page__customStyle .page__customStyle-form h2 {
+  clear: both;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+  font-weight: 400;
+  margin-left: calc(20px * -1);
+  margin-right: calc(20px * -1);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#page__customStyle .page__customStyle-form .field-wrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#page__customStyle .page__customStyle-form .field-wrap .CodeMirror {
+  height: 200px;
+  border-radius: 4px;
+  border: 1px solid #8c8f94;
+}
+#page__customStyle .page__customStyle-form .field-label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+#page__customStyle .page__customStyle-form .field-label small {
+  font-weight: 300;
+  text-transform: lowercase;
+  display: block;
+}
+#page__customStyle .page__customStyle-form .field-label small:empty {
+  display: none;
+}
+#page__customStyle .page__customStyle-form .field-input, #page__customStyle .page__customStyle-form .field-button, #page__customStyle .page__customStyle-form .field-select {
+  width: 100%;
+  padding: 5px 10px;
+  max-width: unset;
+  height: auto;
+}
+#page__customStyle .page__customStyle-form fieldset {
+  position: relative;
+}
+#page__customStyle .page__customStyle-form fieldset:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#page__customStyle .page__customStyle-form fieldset .fieldset-label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+#page__customStyle .page__customStyle-form fieldset > .field-wrap {
+  float: left;
+  width: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#page__customStyle .page__customStyle-form fieldset > .field-wrap .field-label {
+  margin-left: 5px;
+}

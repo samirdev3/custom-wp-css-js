@@ -1,0 +1,121 @@
+$gap: 20px;
+$input_padding: 5px 10px;
+$accent_color: oldlace;
+$text_color: #111;
+
+#page__customStyle {
+    clear: both;
+    padding: $gap;
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(#000, 0.15);
+    overflow: hidden;
+
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: $gap;
+        color: $text_color;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 22px;
+        background-color: $accent_color;
+        padding: $gap;
+        margin: calc(#{$gap * -1});
+        margin-bottom: $gap;
+        border-bottom: 1px solid rgba(#000, 0.15);
+    }
+}
+
+#page__customStyle {
+    .page__customStyle {
+        &-form {
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+    
+            h2 {
+                clear: both;
+                border-top: 1px solid rgba(#000, 0.15);
+                padding-top: 10px;
+                font-weight: 400;
+                margin-left: calc(#{$gap} * -1);
+                margin-right: calc(#{$gap} * -1);
+                padding-left: $gap;
+                padding-right: $gap;
+            }
+    
+            .field-wrap {
+                float: left;
+                width: 100%;
+                margin-bottom: $gap;
+
+                .CodeMirror {
+                    height: 200px;
+                    border-radius: 4px;
+                    border: 1px solid #8c8f94;
+                }
+            }
+    
+            .field-label {
+                display: block;
+                margin-bottom: 2px;
+                font-weight: 600;
+    
+                small {
+                    font-weight: 300;
+                    text-transform: lowercase;
+                    display: block;
+    
+                    &:empty {
+                        display: none;
+                    }
+                }
+            }
+    
+            .field-input, .field-button, .field-select {
+                width: 100%;
+                padding: $input_padding;
+                max-width: unset;
+                height: auto;
+            }
+
+            fieldset {
+                position: relative;
+                
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                .fieldset-label {
+                    display: block;
+                    margin-bottom: 2px;
+                    font-weight: 600;
+                }
+
+                & > .field-wrap {
+                    float: left;
+                    width: auto;
+                    margin-right: $gap;
+                    margin-bottom: $gap;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    
+                    .field-label {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
